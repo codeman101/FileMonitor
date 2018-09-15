@@ -1,0 +1,15 @@
+C:\Users\fgrei\PycharmProjects\siteChecker date 9/12/2018 11:19:18 AM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\COMMIT_EDITMSG date 9/12/2018 4:33:40 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\config date 9/12/2018 4:35:28 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\description date 9/12/2018 4:08:26 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\FETCH_HEAD date 9/12/2018 4:37:03 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\HEAD date 9/12/2018 4:08:26 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\index date 9/12/2018 5:14:08 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.git\ORIG_HEAD date 9/12/2018 4:37:13 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\.idea\misc.xml date 9/12/2018 11:22:11 AM
+C:\Users\fgrei\PycharmProjects\siteChecker\.idea\modules.xml date 9/12/2018 11:19:19 AM
+C:\Users\fgrei\PycharmProjects\siteChecker\.idea\siteChecker.iml date 9/12/2018 11:22:10 AM
+C:\Users\fgrei\PycharmProjects\siteChecker\.idea\workspace.xml date 9/13/2018 2:21:45 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\Readme.md date 9/12/2018 4:33:15 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\siteChecker.py date 9/12/2018 5:17:07 PM
+C:\Users\fgrei\PycharmProjects\siteChecker\text.txt date 9/12/2018 4:43:17 PM
