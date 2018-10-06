@@ -58,10 +58,37 @@ namespace FileMonitor
                         if (attr.HasFlag(FileAttributes.Directory)) // check if path is a directory or file
                         {
                             Directory.Delete(delPath, true); // if it's a directory delete everything in the directory
+                            File.Delete(FileListPath);
+                            for (int j = 0; j < i; j++)
+                            {
+                                File.AppendAllLines(FileListPath, files[j]);
+                            }
+                            int first = files[i].LastIndexOf("\\");
+                            int last = files[i].IndexOf(" ", first);
+                            string headDirPiece = files[i].Substring(first, last); // piece that subdirs have in common
+                            int stop = i++;
+                            while(files[i].Contains(headDirPiece))
+                            {
+                                stop++; // counting how many sub directories are listed in the file list
+                            }
+                            for (int j = stop; j < files.Length; j++)
+                            {
+                                File.AppendAllLines(FileListPath, files[j]);
+                            }
+
                         }
                         else // otherwise just delete the file
                         {
                             File.Delete(delPath);
+                            File.Delete(FileListPath);
+                            for (int j = 0; j<i; j++)
+                            {
+                                File.AppendAllLines(FileListPath, files[j]);
+                            }
+                            for (int j = (i++); j<files.Length; j++)
+                            {
+                                File.AppendAllLines(FileListPath, files[j]);
+                            }
                         }
                     }
                 }
@@ -69,8 +96,8 @@ namespace FileMonitor
             {
                 using (StreamWriter sw = File.AppendText("C:\\Users\\Public\\Desktop\\FileList.txt"))
                 {
-                    sw.WriteLine(e.ToString() + "delete this path from file"); // write path to file with "delete this path from file" phrase at the end so user 
-// knows to delete the path from the file
+                    sw.WriteLine(e.ToString()); // probably FileNotFound exception hit from trying to open file list at the beginning 
+                    // but I used Exception as the catch parameter to be safe.
                 }
             }
         }
