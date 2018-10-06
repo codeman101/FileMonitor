@@ -1,7 +1,0 @@
-C:\Users\fgrei\source\repos\FileLogger\obj\Debug\FileLogger.csprojAssemblyReference.cache
-C:\Users\fgrei\source\repos\FileLogger\obj\Debug\FileLogger.csproj.CoreCompileInputs.cache
-C:\Users\fgrei\source\repos\FileLogger\bin\Debug\FileLogger.exe.config
-C:\Users\fgrei\source\repos\FileLogger\bin\Debug\FileLogger.exe
-C:\Users\fgrei\source\repos\FileLogger\bin\Debug\FileLogger.pdb
-C:\Users\fgrei\source\repos\FileLogger\obj\Debug\FileLogger.exe
-C:\Users\fgrei\source\repos\FileLogger\obj\Debug\FileLogger.pdb

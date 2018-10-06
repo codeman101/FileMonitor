@@ -5,6 +5,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+//--------------------------------------------------------------------------------------------------
+// Name: Main
+// 
+// 
+// Arguments:
+// None: Program doesn't use the C# args parameter explicitly. However the program itself is executed with an argument that is implicitly passed to the function
+// and accessed from the first line.
+//
+// 
+//
+// About: Logs file passed from execution to a text file called FileList. If file path is a directory then files within the directory are logged recursively via
+// dirSearch function.
+// 
+//--------------------------------------------------------------------------------------------------
+
+
+
 namespace FileLogger
 {
     class Program

@@ -9,6 +9,24 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+//--------------------------------------------------------------------------------------------------
+// Name: OnStart
+// 
+// 
+// Arguments:
+// None: Program doesn't use the C# args parameter explicitly.
+//
+// 
+//
+// About: Starts off by reading from a text file in the user's documents folder called FileList and reads the file paths listed in that file.
+// It then checks to see if any of those files are 14 days old and if they are it deletes the file or directory. Directories are deleted recursively.
+// if path read from file isn't found then the path is rewritten to the file with a note at the end telling the user to delete the path from the list.
+//
+// 
+//--------------------------------------------------------------------------------------------------
+
 namespace FileMonitor
 {
     public partial class FileMonitor : ServiceBase
@@ -51,7 +69,8 @@ namespace FileMonitor
             {
                 using (StreamWriter sw = File.AppendText("C:\\Users\\Public\\Desktop\\FileList.txt"))
                 {
-                    sw.WriteLine(e.ToString()); // write current file path in loop to the file list
+                    sw.WriteLine(e.ToString() + "delete this path from file"); // write path to file with "delete this path from file" phrase at the end so user 
+// knows to delete the path from the file
                 }
             }
         }
